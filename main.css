@@ -131,7 +131,7 @@ background-image: url("weed.png");
 .about-me-container span{
   color:white;
   font-size: 5vh;
-  width: 100%;
+  width: 45vh;
 }
 .about-me-container span::after
 {
