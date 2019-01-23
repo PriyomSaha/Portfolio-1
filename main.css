@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+section
+{
+  height:100vh;
+  width:100%;
+  padding: 0;
+  margin: 0;
+
+}
+.one
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.one::after
+{
+		background: url(background1.jpg);
+	    background-repeat: no-repeat;
+		background-size: auto;
+		background-position: top;
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -2;
+		opacity: 0.7;
+		transform: skewY(-5deg);
+  transform-origin: top left;
+}
+.element1
+{
+  font-size: 20vh;
+  font-weight:30vh;
+  color:#1ed2f4;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: bold;
+}
+.me
+{
+  font-size: 10vh;
+  color:#eafc40;
+  font-family: 'Indie Flower', cursive;
+  position:sticky;
+
+
+}
+/* Scroll indicator */
+.box
+{
+  position: absolute;
+  left:50%;
+  transform: translate(-50%);
+}
+.box span
+{
+  display: block;
+  width:20px;
+  height:20px;
+  transform: rotate(45deg);
+  margin: -5px;
+  animation: animate 2s infinite;
+}
+.box span:nth-child(1)
+{
+  animation-delay: 0.2s;
+  border-bottom: 5px solid #f88379;
+  border-right: 5px solid #f88379;
+}
+.box span:nth-child(2)
+{
+  animation-delay: 0.4s;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+}
+.box span:nth-child(3)
+{
+  animation-delay: 0.6s;
+  border-bottom: 5px solid green;
+  border-right: 5px solid green;
+}
+
+@keyframes animate {
+  0%
+  {
+    opacity: 0;
+  }
+  50%
+  {
+    opacity: 1;
+  }
+  100%
+  {
+    opacity: 0;
+  }
+}
+
+.two
+{
+	background-color:green;
+  transform: skewY(-6deg);
+transform-origin: bottom left;
+margin-top: -8vh;
+background-image: url("weed.png");
+  background-repeat: space;
+}
+
+.about-me,.about-me-container
+{
+  margin-top: 8vh;
+  display: flex;
+  justify-content: center;
+}
+.about-me h1
+{
+  font-size: 8vh;
+  color:white;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: -5vh;
+}
+.about-me-container
+{
+  text-align: center;
+  margin-top: -5vh;
+}
+.about-me-container span{
+  color:white;
+  font-size: 5vh;
+  width: 45vh;
+}
+.about-me-container span::after
+{
+  background-color: black;
+  opacity:0.5;
+}
+.three
+{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.three button
+{
+  width:20vh;
+  height:10vh;
+}
+/*.fa-instagram {
+  color: white;
+  padding:10px;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+*/
